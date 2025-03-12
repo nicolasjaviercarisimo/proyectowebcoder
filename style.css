@@ -1,0 +1,198 @@
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: rock salt , sans-serif, open sans ;
+    }
+    
+    body {
+        background-color: #141414;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    header {
+        background-image: url('https://www.saborusa.com/ni/wp-content/uploads/sites/19/2019/11/Calma-tus-antojos-con-deliciosas-y-rapidas-recetas-Foto-destacada.png');
+        color: yellowgreen;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+    
+    nav {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        padding: 10px;
+        background-color: transparent;
+    }
+    
+    nav a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 19px;
+    }
+    
+    nav a:hover {
+    
+        color: rgb(255, 255, 255);
+         
+    }
+    
+    .container-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        max-width: 90%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 1000px rgb(255, 255, 255);
+        text-align: center;
+        margin: 20px auto;
+    }
+    
+    .container img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+    }
+    
+    .text h1 {
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .text p {
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .container-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #222;
+        padding: 10px;
+    }
+    
+    .container-nav a {
+        color: yellowgreen;
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+    blo
+    .container-nav a:hover {
+        text-shadow: 0px 0px 5px yellowgreen;
+        
+    }
+    
+    main {
+        
+        flex: 0;
+        padding: 20px;
+       
+    }
+    
+    section {
+        
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 25px;
+        margin: 150px;
+        margin-top: 1px;
+    }
+    
+    .hamburguesa, .sandwiches, .pizza, .papasfritas, .empanadas, .gaseosas, .birra {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 15px;
+        margin: 40px;
+    }
+    
+    .item {
+        display: inline-block;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        padding: 15px;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 30px;
+        box-shadow: 0px 0px 10px rgba(77, 69, 69, 0.973);
+    }
+
+    .item:hover{
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.986);
+        transform: scale(1.2);
+        transition: transform 0.9s ease;
+    }
+
+    .burger-img {
+        width: 100%;
+        max-width: 120px; 
+        height: auto; 
+        display: block;
+        margin: 0 auto 10px; 
+        border-radius: 5px; 
+    }
+    
+    footer {
+        text-align: center;
+        padding: 15px;
+        background-color: black;
+        color: yellowgreen;
+    }
+
+    /*.menu-item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .menu-img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+    .dropdown-menu {
+        text-align: center;
+    }*/
+
+
+    
+   
+    @media (max-width: 768px) {
+        .container img {
+            width: 100%;
+        }
+    
+        nav {
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        .hamburguesa, .sandwiches, .pizza {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .item {
+            width: 80%;
+        }
+    }
+      
