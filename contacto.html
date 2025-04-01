@@ -9,7 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rock+Salt&display=swap" rel="stylesheet">
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
 
@@ -17,7 +21,7 @@
     <!--<div class="logo">Comidas Rápidas X</div>-->
 
     <div class="container-header">
-        <img src="https://images.vexels.com/media/users/3/155481/isolated/preview/622b56964a549b765dcaa8652b08ea87-icono-de-garabato-de-marca-x.png?w=360" alt="Comida Rápida">
+        <img src="https://images.vexels.com/media/users/3/155481/isolated/preview/622b56964a549b765dcaa8652b08ea87-icono-de-garabato-de-marca-x.png?w=360" alt="Comida Rápida" class="animate__animated animate__zoomIn">
         
         <div class="text">
             <h1>Comidas Rapidas X</h1> 
@@ -30,17 +34,61 @@
         <a href="servicios.html">Servicios</a>
         <a href="#">Contacto</a>
         <a href="acercadenosotros.html" class="acerca">Acerca de Nosotros</a>
+        <a href="historia.html">Historia de la empresa</a>
     </nav>
 </header>
 
+<div class="container-nav">
+    <nav>
+        <a href="index.html#hamburguesa">Hamburguesas</a>
+        <a href="index.html#sandwiche">Sandwiches</a>
+        <a href="index.html#pizza">Pizzas</a>
+        <a href="index.html#papafrita">Fritas</a>
+        <a href="index.html#empanada">Empanadas</a>
+        <a href="index.html#gaseosa">Gaseosas</a>
+        <a href="index.html#birra">Birras</a>
+    </nav>
+</div>
 
 
 <main>
-   
+    <form action="/submit" method="post"> 
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+        <br>
+        <br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+        <br>
+        <input type="submit" value="Enviar" id="enviar class="button"">  
+     </form>
 </main>
 
+<!-- <div>
+    <h5>Comunicate con nuestro numero de Whatsapp: +54 3764 999999</h5>
+    <br>
+    <h5>Comunicate con nuestro Em@il: comidasrapidasX@gmail.com</h5>
+    <br>
+    <h5>Comunicate con nuestro Facebook: Comidas Rapidas X </h5>
+    <br>
+    <h5>Comunicate con nuestro Instagram : @comidasrapidasX</h5>
+</div> -->
+
+<div class="icons">
+    <ul>
+        <li class="whatsapp"><a href="https://www.whatsapp.com/"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+        <li class="google"><a href="https://mail.google.com/"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li>
+        <li class="facebook"><a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+        <li class="instagram"><a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+    </ul>
+</div>
+
+
 <footer>
-    <p>2025  Todos los derechos reservados.</p>
+    
+    <p><a href="#">2025 Todos los derechos reservados.></a></p>
 </footer>
 
 </body>

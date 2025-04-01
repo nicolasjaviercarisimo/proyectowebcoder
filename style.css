@@ -1,186 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rock Salt', sans-serif, 'Open Sans'; /* Asegúrate de que las fuentes sean correctas */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+header {
+    background-image: url('https://www.saborusa.com/ni/wp-content/uploads/sites/19/2019/11/Calma-tus-antojos-con-deliciosas-y-rapidas-recetas-Foto-destacada.png');
+    color: yellowgreen;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+    background-color: transparent;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 19px;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+form {
+    text-align: center;
+}
+
+form input {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-family: italic;
+}
 
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: rock salt , sans-serif, open sans ;
-    }
-    
-    body {
-        background-color: #141414;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-    
-    header {
-        background-image: url('https://www.saborusa.com/ni/wp-content/uploads/sites/19/2019/11/Calma-tus-antojos-con-deliciosas-y-rapidas-recetas-Foto-destacada.png');
-        color: yellowgreen;
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+input, textarea {
+    background-color: white; 
+    color: black; 
+    padding: 10px;
+    border: 2px solid #ccc; 
+    font-size: 16px;
+    border-radius: 5px; 
+    transition: background-color 0.5s ease, border-color 0.3s ease; 
+  }
+  
+  
+  input:focus, textarea:focus {
+    background-color: yellowgreen;
+    border-color: yellowgreen; 
+    color: white; 
+  }
+  
+  
+  input:hover, textarea:hover {
+    background-color: yellowgreen;
+    border-color: yellowgreen; 
+    color: white;
+  }
+
+#mensaje {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-family: italic;
+}
+
+#enviar {
+    color: black;
+    font-family: 'Rock Salt', sans-serif, 'Open Sans';
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 70px auto;
+}
+
+.icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons ul li {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons i {
+    color: yellowgreen;
+    font-size: 25px;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1000px rgb(255, 255, 255);
+    text-align: center;
+    margin: 20px auto;
+}
+
+.container img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.text h1 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text p {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #222;
+    padding: 10px;
+}
+
+.container-nav a {
+    color: yellowgreen;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.container-nav a:hover {
+    text-shadow: 0px 0px 5px yellowgreen;
+}
+
+main {
+    flex: 0;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    margin: 150px;
+    margin-top: 1px;
+}
+
+.hamburguesa, .sandwiches, .pizza, .papasfritas, .empanadas, .gaseosas, .birra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    margin: 40px;
+}
+
+.item {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(77, 69, 69, 0.973);
+}
+
+.item:hover {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.986);
+    transform: scale(1.2);
+    transition: transform 0.9s ease;
+}
+
+.burger-img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: black;
+    color: yellowgreen;
+}
+
+footer p a {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-shadow: 0px 0px 5px yellowgreen;
+    color: rgb(255, 255, 255);
+}
+
+.servicios-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.servicio-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: calc(33.33% - 20px);
+    max-width: 300px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.servicio-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #ffffff;
+    margin: 10px 0;
+    text-decoration: underline;
+}
+
+.servicio-card h2 {
+    font-size: 25px;
+    color: #000000;
+    margin: 10px 0;
+    text-decoration: underline;
+}
+
+.servicio-card p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.servicio-card:hover {
+    transform: translateY(-10px);
+}
+
+#acerca-de-nosotros {
+    text-align: center;
+    padding: 40px;
+    background-color: #141414;
+    color: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+
+#acerca-de-nosotros h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: yellowgreen;
+}
+
+.equipo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.miembro {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.miembro img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.miembro h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: yellowgreen;
+}
+
+.miembro p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.historia h2, .historia h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: yellowgreen;
+    text-decoration: underline;
+}
+
+.historia p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #bbb;
+    line-height: 1.8;
+}
+
+.historia ul {
+    text-align: left;
+    margin: 20px auto;
+    list-style-type: none;
+    font-size: 1.1rem;
+    color: #bbb;
+}
+
+.historia ul li {
+    margin-bottom: 10px;
+}
+
+.historia img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+    @media (max-width: 1024px) {
         
-    }
-    
-    .logo {
-        font-size: 24px;
-        font-weight: bold;
-        text-align: center;
-        
-    }
-    
-    nav {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-        padding: 10px;
-        background-color: transparent;
-    }
-    
-    nav a {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        font-size: 19px;
-    }
-    
-    nav a:hover {
-    
-        color: rgb(255, 255, 255);
-         
-    }
-    
-    .container-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgb(255, 255, 255);
-        max-width: 90%;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 1000px rgb(255, 255, 255);
-        text-align: center;
-        margin: 20px auto;
-    }
-    
-    .container img {
-        width: 100%;
-        max-width: 600px;
-        border-radius: 10px;
-    }
-    
-    .text h1 {
-        font-size: 30px;
-        color: rgb(0, 0, 0);
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .text p {
-        font-size: 18px;
-        color: rgb(0, 0, 0);
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .container-nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-color: #222;
-        padding: 10px;
-    }
-    
-    .container-nav a {
-        color: yellowgreen;
-        text-decoration: none;
-        padding: 5px 10px;
-    }
-    blo
-    .container-nav a:hover {
-        text-shadow: 0px 0px 5px yellowgreen;
-        
-    }
-    
-    main {
-        
-        flex: 0;
-        padding: 20px;
-       
-    }
-    
-    section {
-        
-        margin-bottom: 20px;
-        text-align: center;
-        font-size: 25px;
-        margin: 150px;
-        margin-top: 1px;
-    }
-    
-    .hamburguesa, .sandwiches, .pizza, .papasfritas, .empanadas, .gaseosas, .birra {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 15px;
-        margin: 40px;
-    }
-    
-    .item {
-        display: inline-block;
-        background-color: rgb(255, 255, 255);
-        color: black;
-        padding: 15px;
-        width: 150px;
-        text-align: center;
-        font-weight: bold;
-        border-radius: 30px;
-        box-shadow: 0px 0px 10px rgba(77, 69, 69, 0.973);
-    }
-
-    .item:hover{
-        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.986);
-        transform: scale(1.2);
-        transition: transform 0.9s ease;
-    }
-
-    .burger-img {
-        width: 100%;
-        max-width: 120px; 
-        height: auto; 
-        display: block;
-        margin: 0 auto 10px; 
-        border-radius: 5px; 
-    }
-    
-    footer {
-        text-align: center;
-        padding: 15px;
-        background-color: black;
-        color: yellowgreen;
-    }
-
-    /*.menu-item {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .menu-img {
-        width: 100%;
-        max-width: 200px;
-        height: auto;
-    }
-    .dropdown-menu {
-        text-align: center;
-    }*/
-
-
-    
-   
-    @media (max-width: 768px) {
-        .container img {
-            width: 100%;
+        .container-header {
+            max-width: 80%;
         }
     
+        .hamburguesa, .sandwiches, .pizza, .papasfritas, .empanadas, .gaseosas, .birra {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .item {
+            width: 80%;
+        }
+    
+        .icons {
+            width: 80%;
+            margin: 40px auto;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        
         nav {
             flex-direction: column;
             gap: 10px;
@@ -194,5 +425,76 @@
         .item {
             width: 80%;
         }
+    
+        .icons {
+            width: 90%;
+            margin: 40px auto;
+        }
+    
+        .container-header {
+            max-width: 90%;
+        }
+    
+        .container img {
+            width: 100%;
+        }
+    
+        section {
+            margin: 20px;
+            font-size: 20px;
+        }
+    
+        .servicio-card {
+            width: 100%;
+        }
+    
+        .servicios-container {
+            flex-direction: column;
+            align-items: center;
+        }
     }
-      
+    
+    @media (max-width: 480px) {
+        
+        .container-header {
+            max-width: 100%;
+        }
+    
+        .container img {
+            width: 100%;
+        }
+    
+        .icons {
+            width: 100%;
+            margin: 20px auto;
+        }
+    
+        .hamburguesa, .sandwiches, .pizza, .papasfritas, .empanadas, .gaseosas, .birra {
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+    
+        .item {
+            width: 90%;
+        }
+    
+        footer {
+            padding: 10px;
+        }
+    
+        section {
+            margin: 20px;
+            font-size: 18px;
+        }
+    
+        .servicio-card {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    
+        .servicios-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
